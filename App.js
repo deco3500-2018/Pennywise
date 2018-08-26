@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, Image} from 'react-native';
+import {Platform, StyleSheet, Text, View, Image, TextInput} from 'react-native';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -20,12 +20,31 @@ export default class App extends Component{
 
   constructor(){
     super()
-    this.state = {}
+    this.state = {username:"User ID or Email",
+                  password:"Your password"}
+    }
+
+    handleUsernameChanges(newText){
+      console.log(`Username is ${newText}`);
+    }
+
+    handlePasswordChanges(newText){
+      console.log(`Password is ${newText}`);
     }
 
   render() {
     return (
       <View style={styles.container}>
+        <Text>Username</Text>
+        <TextInput
+
+          onChangeText={this.handleUsernameChanges}/>
+        <Text>Password</Text>
+          <TextInput
+
+            onChangeText={this.handlePasswordChanges}/>
+
+
         <View style= {styles.half}>
           <Text style={styles.title}>PennyWise</Text>
         </View>
@@ -43,8 +62,8 @@ export default class App extends Component{
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-
-    // justifyContent: 'center',
+    justifyContent: 'center',
+    padding:20
     // alignItems: 'center',
     // backgroundColor: '#F5FCFF',
   },
