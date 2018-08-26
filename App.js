@@ -21,33 +21,20 @@ export default class App extends Component{
   constructor(){
     super()
     this.state = {}
-    this.state.customStyles = {
-      color:'red'
     }
-
-    setInterval(()=>{
-      if(this.state.customStyles.color == 'red'){
-        this.setState({
-          customStyles:{
-            color:'green'
-          }
-        })
-      }else{
-        this.setState({
-          customStyles:{
-            color:'red'
-          }
-        })
-      }
-
-    },1000)
-  }
 
   render() {
     return (
       <View style={styles.container}>
-        <Text style={[styles.welcome, this.state.customStyles]}>Hello world</Text>
-
+        <View style= {styles.half}>
+          <Text style={styles.title}>PennyWise</Text>
+        </View>
+        <View style= {styles.half2}>
+          <View style={[styles.half21, styles.half2x]}>
+          </View>
+          <View style={[styles.half22, styles.half2x]}>
+          </View>
+        </View>
       </View>
     );
   }
@@ -56,19 +43,33 @@ export default class App extends Component{
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    // backgroundColor: '#F5FCFF',
+  },
+  half: {
+    flex:1,
+    backgroundColor: '#3498db',
     justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    alignItems: 'center'
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    color:'blue',
-    margin: 10,
+  half2: {
+    flex:1,
+    flexDirection:'row',
+    backgroundColor: 'blue'
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  half2x:{flex:1},
+  half21:{
+    backgroundColor:'#34495e',
   },
+  half22:{
+    backgroundColor:'#ecf0f1'
+  },
+  title:{
+    color:'white',
+    fontSize: 12,
+  }
+
+
 });
