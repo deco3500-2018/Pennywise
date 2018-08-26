@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, Image, TextInput} from 'react-native';
+import {Platform, StyleSheet, Text, View, Image, TextInput, Button} from 'react-native';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -20,16 +20,15 @@ export default class App extends Component{
 
   constructor(){
     super()
-    this.state = {username:"User ID or Email",
-                  password:"Your password"}
+    this.state = {}
+    this.buttonPressed = this.buttonPressed.bind(this)
     }
 
-    handleUsernameChanges(newText){
-      console.log(`Username is ${newText}`);
-    }
-
-    handlePasswordChanges(newText){
-      console.log(`Password is ${newText}`);
+    buttonPressed(){
+      // console.log(this._username, this._password);
+      // const username = this._username._lastNativeText
+      // const password = this._password._lastNativeText
+      console.log(this.state.username, this.state.password);
     }
 
   render() {
@@ -37,13 +36,13 @@ export default class App extends Component{
       <View style={styles.container}>
         <Text>Username</Text>
         <TextInput
-
-          onChangeText={this.handleUsernameChanges}/>
+          defaultValue={this.state.username}
+          onChangeText={text => this.setState({username: text})}
+      />
         <Text>Password</Text>
-          <TextInput
-
-            onChangeText={this.handlePasswordChanges}/>
-
+          <TextInput defaultValue={this.state.password}
+          onChangeText={text => this.setState({password: text})}/>
+        <Button title={"Submit"} onPress={this.buttonPressed}/>
 
         <View style= {styles.half}>
           <Text style={styles.title}>PennyWise</Text>
