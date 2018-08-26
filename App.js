@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, Image} from 'react-native';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -16,14 +16,38 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends Component{
+
+  constructor(){
+    super()
+    this.state = {}
+    this.state.customStyles = {
+      color:'red'
+    }
+
+    setInterval(()=>{
+      if(this.state.customStyles.color == 'red'){
+        this.setState({
+          customStyles:{
+            color:'green'
+          }
+        })
+      }else{
+        this.setState({
+          customStyles:{
+            color:'red'
+          }
+        })
+      }
+
+    },1000)
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Hello world</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <Text style={[styles.welcome, this.state.customStyles]}>Hello world</Text>
+
       </View>
     );
   }
@@ -39,6 +63,7 @@ const styles = StyleSheet.create({
   welcome: {
     fontSize: 20,
     textAlign: 'center',
+    color:'blue',
     margin: 10,
   },
   instructions: {
