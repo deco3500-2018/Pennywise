@@ -17,11 +17,14 @@ class Home extends Component{
       fetch('http://127.0.0.1:8081', {method:'POST',body: JSON.stringify({username,password})})
       .then(res =>{
         return res.text();
+
       })
       .then(res => {
+        console.warn(res);
         if (res === '1'){
           this.props.navigation.navigate('dashboard')
         }else{
+
           Alert.alert('Error', 'Username or Password wrong', [{text:'Okay'}])
         }
 
