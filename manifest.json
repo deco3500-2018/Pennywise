@@ -3,7 +3,7 @@
   "version": "1.0",
   "description":
     "",
-  "icons": {"16": "logo.png", "48": "logo.png", "128": "logo.png"},
+  "icons": {"16": "assets/images/logo.png", "48": "assets/images/logo.png", "128": "assets/images/logo.png"},
   "permissions": [
     "notifications"
   ],
