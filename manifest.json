@@ -1,15 +1,15 @@
 {
-  "manifest_version": 2,
-
   "name": "Puzzle Pay",
-  "description": "Puzzle Pay",
   "version": "1.0",
-
+  "description":
+    "",
+  "icons": {"16": "logo.png", "48": "logo.png", "128": "logo.png"},
   "permissions": [
-    "tabs"
+    "notifications"
   ],
-  "browser_action": {
-    "default_icon": "/assets/Images/logo.png",
-    "default_popup": "popup.html"
-  }
+  "background": { "scripts": ["assets/JS/index.js"] },
+  "manifest_version": 2,
+  "web_accessible_resources": [
+    "logo.png"
+  ]
 }
