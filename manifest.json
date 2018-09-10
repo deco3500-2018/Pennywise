@@ -1,15 +1,19 @@
 {
   "name": "Puzzle Pay",
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
   "version": "1.0",
   "description":
     "",
   "icons": {"16": "assets/images/logo.png", "48": "assets/images/logo.png", "128": "assets/images/logo.png"},
   "permissions": [
-    "notifications"
+    "notifications","tabs"
   ],
-  "background": { "scripts": ["assets/JS/index.js"] },
+  "background": { "scripts": ["assets/JS/jquery.js" ,"assets/JS/index.js"] },
   "manifest_version": 2,
   "web_accessible_resources": [
     "logo.png"
-  ]
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
 }
