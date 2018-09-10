@@ -6,6 +6,16 @@ function show() {
   chrome.tabs.create({url:"http://google.com/"});
 }
 
+function url(){
+  chrome.tabs.getSelected(null, function(tab){
+    var link = document.createElement('a');
+    link.href = tab.url;
+    $('#test').html(link.hostname);
+    console.log(link.href);
+    console.log(link.hostname);
+  })
+}
+
 if (!localStorage.isInitialized) {
   localStorage.isActivated = true;
   localStorage.frequency = 1;
@@ -29,4 +39,8 @@ if (window.Notification) {
     }
   }, 60000);
 
-}
+};
+
+$(document).ready(function(){
+  url();
+})
