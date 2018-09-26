@@ -9,6 +9,15 @@
     "notifications","tabs"
   ],
   "background": { "scripts": ["assets/JS/jquery.js" ,"assets/JS/index.js"] },
+  "content_scripts": [
+        {
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+            ],
+        "js": ["assets/JS/content.js"]
+        }
+    ],
   "manifest_version": 2,
   "web_accessible_resources": [
     "logo.png"
