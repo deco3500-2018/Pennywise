@@ -25,12 +25,12 @@ https://github.com/deco3500-2018/Pennywise.git
 
 After sucessfuly clone, you will get a folder with file structure like this
 
-![alt text](https://github.com/deco3500-2018/Pennywise/blob/master/assets/Images/Screen%20Shot%202018-09-16%20at%2010.36.43%20am.png)
+![alt text](https://github.com/deco3500-2018/Pennywise/blob/master/Plugin/assets/Images/Screen%20Shot%202018-09-16%20at%2010.36.43%20am.png)
 
 ### 2. Open Developer mode in Chrome and Install the extension
 Go to chrome://extensions/ and make sure you opened developer mode
-![alt text](https://github.com/deco3500-2018/Pennywise/blob/master/assets/Images/Screen%20Shot%202018-09-16%20at%2010.57.18%20am.png)
+![alt text](https://github.com/deco3500-2018/Pennywise/blob/master/Plugin/assets/Images/Screen%20Shot%202018-09-16%20at%2010.57.18%20am.png)
 
 
 Click "Load Unpacked" to install the extension
-![alt text](https://github.com/deco3500-2018/Pennywise/blob/master/assets/Images/Screen%20Shot%202018-09-16%20at%2010.57.35%20am.png)
+![alt text](https://github.com/deco3500-2018/Pennywise/blob/master/Plugin/assets/Images/Screen%20Shot%202018-09-16%20at%2010.57.35%20am.png)
