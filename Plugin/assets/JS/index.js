@@ -2,6 +2,7 @@
 
 function show() {
   chrome.tabs.getSelected(null, (tab) => {
+    // Amazon price detect
     chrome.tabs.sendRequest(tab.id, {method: "getPrice"}, (response) => {
         if(response.method=="getPrice"){
             alltext = response.data;
@@ -32,7 +33,7 @@ function url(){
 }
 
 
-
+// Detect if user is in the shopping cart page
 chrome.tabs.onUpdated.addListener( (tabId, changeInfo, tab) => {
   if (changeInfo.status == 'complete' && tab.active) {
     console.log(tab);
@@ -41,7 +42,8 @@ chrome.tabs.onUpdated.addListener( (tabId, changeInfo, tab) => {
       var link = document.createElement('a');
       link.href = tab.url;
 
-      if (link.href.includes("cart")) {
+      // The close function is working for Amazon/Ebay/Taobao
+      if (link.href.includes("cart") || link.href.includes("itemlist")) {
         //close tab
         chrome.tabs.remove(tab.id,()=>{});
           // $('#detect').html(link.href);

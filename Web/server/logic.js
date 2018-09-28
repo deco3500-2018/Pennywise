@@ -1,4 +1,4 @@
-var http = require("http"),
+const http = require("http"),
   url = require("url"),
   qs = require("querystring"),
   fs = require("fs");
@@ -90,9 +90,5 @@ http.createServer((req, res) => {
 
   } else {
     res.end("wrong");
-  }
-}).listen(3000, (err) => {
-  if (!err) {
-    console.log("listen 3000");
   }
 });

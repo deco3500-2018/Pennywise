@@ -14,7 +14,7 @@
     </div>
 
     <div class="">
-      <button id = "register">Register</button>
+      <button id = "login">Login</button>
     </div>
   </body>
 
@@ -27,11 +27,13 @@
   <script>
   $(function(){
 
-    $("login").click(()=>{
-      if ("#user").val().length == 0 {
+    $("#login").click(()=>{
+
+      if ($("#user").val().length == 0) {
           return alert("please input username");
       }
-      if ("#password").val().length == 0 {
+
+      if ($("#password").val().length == 0) {
         return alert("please input password");
       }
 
@@ -40,8 +42,8 @@
         url:"http://localhost:3000/login",
         type:"POST",
         data:{
-          username:("#user").val(),
-          password:("#password").val()
+          username:$("#user").val(),
+          password:$("#password").val()
         },
         success:(res)=>{
           alert ("login!")
