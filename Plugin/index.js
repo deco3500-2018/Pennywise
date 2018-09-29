@@ -29,7 +29,7 @@ function show() {
               icon: 'assets/images/logo.png',
               body: 'Price detect:'+ alltext.replace(/\s+/g, '') + '?'
             });
-            chrome.tabs.create({url:"http://google.com/"});
+            chrome.tabs.create({url:"https://seamaszhou.wixsite.com/puzzlepay"});
         }
     });
 });
