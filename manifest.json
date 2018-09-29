@@ -8,14 +8,13 @@
   "permissions": [
     "notifications","tabs"
   ],
-  "background": { "scripts": ["assets/JS/jquery.js" ,"assets/JS/index.js"] },
+  "background": { "scripts": ["jquery.js" ,"index.js"] },
   "content_scripts": [
         {
         "matches": [
-            "http://*/*",
-            "https://*/*"
+            "<all_urls>"
             ],
-        "js": ["assets/JS/content.js"]
+        "js": ["content.js"]
         }
     ],
   "manifest_version": 2,
