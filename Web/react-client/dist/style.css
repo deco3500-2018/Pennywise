@@ -1,16 +1,24 @@
-header {
-  display: block;
-  background-color: #34495e;
-  color: white;
-  width: 100%;
-  height: 50px;
-  color: white;
+
+#background-video{
+height: 100%;
+width: 100%;
+float: left;
+top: 0;
+position: absolute;
+
 }
 
-header a{
-  color: white;
-}
+.regist {
+  z-index: 1000;
+  position: relative;
+  margin-top: 25%;
+  text-align: center;
 
-header a:hover{
-  color:black;
+}
+.others {
+  z-index: 1000;
+  position: relative;
+  margin-top: 2%;
+  text-align: center;
+
 }

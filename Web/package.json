@@ -7,7 +7,7 @@
     "dev": "webpack -d --watch",
     "start": "node ./server/index.js",
     "build": "webpack -p",
-    "react-dev": "webpack -d --watch",
+    "react-dev": "webpack -d --watch --inline",
     "server-dev": "nodemon server/index.js"
   },
   "author": "pennywise",
@@ -23,6 +23,8 @@
     "react-dom": "^16.5.2",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
+    "semantic-ui-react": "^0.82.5",
+    "video-react": "^0.13.0",
     "webpack": "^4.20.2"
   },
   "devDependencies": {

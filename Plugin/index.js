@@ -24,8 +24,8 @@ function show() {
     chrome.tabs.sendMessage(tab.id, {
       method: "getPrice"
     }, function(response) {
-      if (response.method == "getPrice") {
-        alltext = response.data;
+      if (response.method === "getPrice") {
+        let alltext = response.data;
         console.log(alltext);
         new Notification("Hi", {
           icon: "assets/images/logo.png",
