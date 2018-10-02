@@ -64,3 +64,8 @@ build/
 bundle.js
 # Dependency directories
 node_modules/
+
+completions.json
+.jshintrc
+.importjs.json
+.yarn.lock

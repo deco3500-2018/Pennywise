@@ -9,16 +9,32 @@ position: absolute;
 }
 
 .regist {
-  z-index: 1000;
+  z-index: 2;
   position: relative;
-  margin-top: 25%;
+
+  /* margin-top: 25%; */
   text-align: center;
 
 }
-.others {
-  z-index: 1000;
+.likes {
+  z-index: 2;
   position: relative;
-  margin-top: 2%;
+  top: 230px;
+  /* margin-top: 2%; */
   text-align: center;
 
 }
+
+.main-form{
+  z-index: 2;
+  position: relative;
+  top: 200px;
+  /* margin-top: 5%; */
+  text-align: center;
+}
+
+#googleButton{z-index: 2;
+position: relative;
+top:100px;
+/* margin-top: 5%; */
+text-align: center;}
