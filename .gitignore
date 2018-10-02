@@ -69,3 +69,9 @@ completions.json
 .jshintrc
 .importjs.json
 .yarn.lock
+Web/db.txt
+Web/index.html
+Web/index.php
+Web/login.html
+Web/login.php
+Web/server.js
