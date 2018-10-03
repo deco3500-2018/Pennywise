@@ -19,9 +19,6 @@ class Homepage extends Component{
 
           // Video tag must include muted for video autoplay
            <div>
-
-
-
              <Registe/>
             <video id="background-video" style={{zIndex:1}} loop autoPlay muted>
                 <source src={this.state.videoUrl} type="video/mp4" />

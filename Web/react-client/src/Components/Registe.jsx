@@ -1,54 +1,59 @@
 import React, {Component} from 'react';
 import {Button, Icon, Label, Checkbox, Form} from 'semantic-ui-react';
 import {GoogleLogin} from 'react-google-login';
+import {PostData} from './PostData';
+import {Redirect} from 'react-router-dom';
 
-const responseGoogle = (response) => {
-  console.log(response);
-}
+
 
 class Registe extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
+      clickText:'',
       textcolor: 'White',
-      inputwidth: '256 px'
-    }
+      inputwidth: '256 px',
+      loginError: false,
+      redirect: false
+    };
+    this.signup = this.signup.bind(this);
+  }
+
+  signup(res, type){
+    let postData = {
+      name : res.w3.ig,
+      email : res.w3.U3,
+      token: res.Zi.access_token,
+      pic: res.w3.Paa
+    };
+
+    if (postData) {
+      sessionStorage.setItem("userData", JSON.stringify(postData));
+      console.log(sessionStorage.getItem('userData'));
+      this.setState({redirect:true});
+      }else {}
   }
 
   render() {
 
+    if (this.state.redirect || sessionStorage.getItem('userData')) {
+      return (<Redirect to = {'/Welcome'}/>)
+    }
+
+    const responseGoogle = (response) => {
+      this.signup(response, 'google');
+    }
+
+
+
     document.getElementById('googleButton')
-    return (<div>
-
-      // Need get a clientId 
+    return (
+      <div>
       <div id="googleButton">
-
-        <GoogleLogin clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com" buttonText="Login with Google" onSuccess={responseGoogle} onFailure={responseGoogle}/>
+        <GoogleLogin clientId="421584335247-he3fuab3hj1042ikdargouvt2cpul800.apps.googleusercontent.com" buttonText="Login with google" onSuccess={responseGoogle} onFailure={responseGoogle}/>
       </div>
 
-      <div class="main-form">
-        <Form>
-          <Form.Field>
-            <label style={{
-                color: this.state.textcolor
-              }}>User name</label>
-            <input type='text' style={{
-                width: "300px"
-              }} placeholder='User name'/>
-          </Form.Field>
-          <Form.Field>
-            <label style={{
-                color: this.state.textcolor
-              }}>Password</label>
-            <input type='password' style={{
-                width: "300px"
-              }} placeholder='Password'/>
-          </Form.Field>
-          <Button content='Login' primary="primary"/>
-          <Button content='Signup' color='pink'/>
-        </Form>
-      </div>
       <div class="likes">
         <Button as='div' labelPosition='right'>
           <Button color='red'>
@@ -60,7 +65,9 @@ class Registe extends Component {
           </Label>
         </Button>
       </div>
-    </div>)
+
+    </div>
+  );
   }
 
 }

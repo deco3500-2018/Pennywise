@@ -19,7 +19,7 @@ position: absolute;
 .likes {
   z-index: 2;
   position: relative;
-  top: 230px;
+  top: 330px;
   /* margin-top: 2%; */
   text-align: center;
 
@@ -35,6 +35,6 @@ position: absolute;
 
 #googleButton{z-index: 2;
 position: relative;
-top:100px;
+top:280px;
 /* margin-top: 5%; */
 text-align: center;}
