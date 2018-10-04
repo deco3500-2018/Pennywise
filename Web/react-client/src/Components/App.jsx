@@ -1,18 +1,19 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import { browserHistory } from 'react-router';
-import HomePage from './HomePage';
-import Welcome from './welcome';
+import React, {Component} from 'react';
+import Routes from'./routes';
+
+class App extends Component{
+  constructor(){
+    super();
+    this.state = {appName:"Puzzle pay"}
+  }
 
 
-class App extends Component {
   render(){
-    return (
-      <Router>
-          <Route name = "home" exact path ="/" component = {HomePage} />
-          
-      </Router>
-    )
+    return(
+      <div>
+      <Routes name={this.state.appName}/>
+      </div>
+    );
   }
 }
 

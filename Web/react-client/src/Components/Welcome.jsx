@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link, Redirect} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 
 
 class Welcome extends Component{
@@ -11,14 +11,16 @@ class Welcome extends Component{
     };
   }
 
-  dataGet(){
-    let data = JSON.prase(sessionStorage.getItem('userData'));
-    console.log(data);
-    this.setState({name : data.userData.name});
+  componentDidMount(){
+    let data = JSON.parse(sessionStorage.getItem('userData'));
+    this.setState({name : data.name});
   }
   render(){
+    if (!sessionStorage.getItem('userData') || this.state.redirect) {
+      return(<Redirect to ={'/'}/>)
+    }
     return(
-  <div>Welcome {this.state.name} </div>
+  <div>Hi {this.state.name} </div>
     )
   }
 }

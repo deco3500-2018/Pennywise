@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Button, Icon, Label, Checkbox, Form} from 'semantic-ui-react';
 import {GoogleLogin} from 'react-google-login';
-import {PostData} from './PostData';
 import {Redirect} from 'react-router-dom';
 
 
@@ -30,7 +29,7 @@ class Registe extends Component {
 
     if (postData) {
       sessionStorage.setItem("userData", JSON.stringify(postData));
-      console.log(sessionStorage.getItem('userData'));
+  
       this.setState({redirect:true});
       }else {}
   }
