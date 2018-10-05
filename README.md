@@ -9,6 +9,7 @@
 # How to Use puzzle pay
 ## Download from Chrome Web Store
 The extenson is released in Google web store
+
 https://chrome.google.com/webstore/detail/puzzle-pay/gelfhbdlgbhbjgkoppmpmhnebmjnegen
 
 ## Install with source code
