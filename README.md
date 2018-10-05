@@ -8,8 +8,8 @@
 
 # How to Use puzzle pay
 ## Download from Chrome Web Store
-The extension still in developing, will published to Chrome Web Store after developing.
-https://chrome.google.com/webstore/category/extensions
+The extenson is released in Google web store
+https://chrome.google.com/webstore/detail/puzzle-pay/gelfhbdlgbhbjgkoppmpmhnebmjnegen
 
 ## Install with source code
 ### 1. Clone the repository to your local
