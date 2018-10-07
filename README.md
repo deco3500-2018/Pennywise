@@ -35,3 +35,10 @@ Go to chrome://extensions/ and make sure you opened developer mode
 
 Click "Load Unpacked" to install the extension
 ![alt text](https://github.com/deco3500-2018/Pennywise/blob/master/Plugin/assets/Images/Screen%20Shot%202018-09-16%20at%2010.57.35%20am.png)
+
+### 3. Hosting the puzzle pay website locally
+The website is develope by react.js, for running the website locally you will need pull the 'Web' folder from Github first.
+After pulled it, use `cd web` then `npm i` to install necessary node_modules.
+After all node_modules installed, using `npm run server-dev` to running website in your localhost 3000 port.
+
+The website intergradted google login function, you will need add your google developer API (https://developers.google.com/identity/) key in the Web/raect-client/Components/Registe.jsx first
