@@ -20,7 +20,16 @@ class Welcome extends Component{
       return(<Redirect to ={'/'}/>)
     }
     return(
-  <div>Hi {this.state.name} </div>
+      <div>
+  <div class="introduction">Hi {this.state.name}
+    <br/>This time you spent
+  </div>
+
+  <div class="introduction" id="tutorial">tutorial button
+  </div>
+
+  </div>
+
     )
   }
 }

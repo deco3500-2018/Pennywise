@@ -38,3 +38,15 @@ position: relative;
 top:280px;
 /* margin-top: 5%; */
 text-align: center;}
+
+.introduction{z-index: 2;
+position: relative;
+top:280px;
+color: white;
+/* margin-top: 5%; */
+text-align: center;}
+
+#tutorial{
+  left:40%;
+  top: 10%;
+}

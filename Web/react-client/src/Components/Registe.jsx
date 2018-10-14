@@ -29,7 +29,7 @@ class Registe extends Component {
 
     if (postData) {
       sessionStorage.setItem("userData", JSON.stringify(postData));
-  
+
       this.setState({redirect:true});
       }else {}
   }
@@ -37,7 +37,7 @@ class Registe extends Component {
   render() {
 
     if (this.state.redirect || sessionStorage.getItem('userData')) {
-      return (<Redirect to = {'/Welcome'}/>)
+      return (<Redirect to = {'/'}/>)
     }
 
     const responseGoogle = (response) => {
