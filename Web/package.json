@@ -26,11 +26,13 @@
     "react-modal": "^3.6.1",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
+    "react-transition-group": "^1.2.1",
     "semantic-ui-react": "^0.82.5",
     "video-react": "^0.13.0",
     "webpack": "^4.20.2"
   },
   "devDependencies": {
+    "babel-preset-stage-0": "^6.24.1",
     "react-autocomplete-cli": "0.0.3",
     "webpack-cli": "^3.1.1"
   }
