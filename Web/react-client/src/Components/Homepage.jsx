@@ -22,7 +22,7 @@ class Homepage extends Component{
   constructor(props){
     super(props);
     this.state = {
-      videoUrl:'http://localhost/Pennywise/slow.mp4',
+      videoUrl:'http://localhost/Pennywise/public/slow.mp4',
       modalIsOpen: false
     }
     this.openModal = this.openModal.bind(this);
@@ -47,7 +47,7 @@ class Homepage extends Component{
     if (!sessionStorage.getItem('userData') || this.state.redirect) {
       return( <div>
         <Registe/>
-       <video id="background-video" style={{zIndex:1}} loop autoPlay muted>
+       <video id="background-video" style={{zIndex:0}} loop autoPlay muted>
            <source src={this.state.videoUrl} type="video/mp4" />
            Your browser does not support the video tag.
        </video>
@@ -56,31 +56,37 @@ class Homepage extends Component{
     }
         return (
 
-          // Video tag must include muted for video autoplay
            <div>
+
+
              <Welcome/>
+
                <div class="introduction">
-                 <button onClick={this.openModal}>Open Modal</button>
+
+
                  <Modal
                    isOpen={this.state.modalIsOpen}
                    onAfterOpen={this.afterOpenModal}
                    onRequestClose={this.closeModal}
-                   style={customStyles}
-                   contentLabel="Example Modal"
+                   style={{zIndex:5}}
+                   contentLabel="Tutorial modal"
                  >
-
-                   <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
+                 <div class='tutorial'>
                    <button onClick={this.closeModal}>close</button>
-                   <div>I am a modal</div>
-                   <form>
-                     <input />
-                     <button>tab navigation</button>
-                     <button>stays</button>
-                     <button>inside</button>
-                     <button>the modal</button>
-                   </form>
+                   <h2 ref={subtitle => this.subtitle = subtitle}>Welcome to Puzzle Pay</h2>
+
+
+                   <h5>Puzzle Pay can help you deal with inpulsive spending</h5>
+                   <h5>Here is how to use it</h5>
+               <h5>Puzzle Pay will automatically opens when you checkout on online shopping page</h5>
+              <img src="http://localhost/Pennywise/public/cart.png"/>
+            <h5>Input your Observer's Email in the input text field and proceed by clicking the red arrow</h5> <h5>You will be greeted with a puzzle. The solution of the puzzle will be sent to the observer</h5><h5>The puzzle difficulty will be based on the total amount of your cart</h5>
+          <h5>Have fun!</h5></div>
                  </Modal>
+                 <button id="modalButton" onClick={this.openModal}>Tutorial</button>
+
                </div>
+
 
             <video id="background-video" style={{zIndex:0}} loop autoPlay muted>
                 <source src={this.state.videoUrl} type="video/mp4" />

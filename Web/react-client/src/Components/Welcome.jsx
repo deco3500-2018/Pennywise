@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Redirect} from 'react-router-dom';
+import { Button, Divider, Image, Transition } from 'semantic-ui-react';
 
 
 class Welcome extends Component{
@@ -8,7 +9,9 @@ class Welcome extends Component{
     this.state = {
       name : " ",
       redirect : false,
+      visible: true
     };
+    
   }
 
   componentDidMount(){
@@ -22,12 +25,8 @@ class Welcome extends Component{
     return(
       <div>
   <div class="introduction">Hi {this.state.name}
-    <br/>This time you spent
+    <br/>This time you spent 99$
   </div>
-
-  <div class="introduction" id="tutorial">tutorial button
-  </div>
-
   </div>
 
     )
