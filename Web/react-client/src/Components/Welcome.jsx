@@ -12,7 +12,7 @@ class Welcome extends Component{
       name : " ",
       redirect : false,
       visible: true,
-      email : "seamaszhou@gmail.com",
+      email : "",
       message:"hi"
     };
     this.handleChange= this.handleChange.bind(this)
@@ -21,13 +21,15 @@ class Welcome extends Component{
 
 
     handleChange = e => {
-      this.setState({ [e.target.email]:e.target.value})
+
+      this.setState({ [e.target.name]:e.target.value})
+      console.log(this.state);
     }
 
     async handleSubmit(e){
       e.preventDefault()
       const {email,message} = this.state
-
+      console.log(email);
       const form = await axios.post('/api/form',{
         email,message
       })
