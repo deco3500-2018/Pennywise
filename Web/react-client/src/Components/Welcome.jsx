@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Redirect} from 'react-router-dom';
 import { Button, Divider, Image, Transition, Form, Label} from 'semantic-ui-react';
 import { CSSTransitionGroup } from 'react-transition-group';
+import axios from 'axios';
+
 
 class Welcome extends Component{
   constructor(props){
@@ -10,10 +12,11 @@ class Welcome extends Component{
       name : " ",
       redirect : false,
       visible: true,
-      email : "",
-      message:""
+      email : "seamaszhou@gmail.com",
+      message:"hi"
     };
     this.handleChange= this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
 
@@ -21,9 +24,13 @@ class Welcome extends Component{
       this.setState({ [e.target.email]:e.target.value})
     }
 
-    handleSubmit = e =>{
+    async handleSubmit(e){
       e.preventDefault()
       const {email,message} = this.state
+
+      const form = await axios.post('/api/form',{
+        email,message
+      })
     }
 
   componentDidMount(){
