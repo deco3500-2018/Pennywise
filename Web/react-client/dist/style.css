@@ -39,7 +39,7 @@ top:280px;
 /* margin-top: 5%; */
 text-align: center;}
 
-.introduction{z-index: 1;
+.welcome{z-index: 1;
 position: relative;
 top:280px;
 color: white;
@@ -49,12 +49,18 @@ text-align: center;}
 .tutorial{
   text-align: center;
   z-index: 5;
+  position: relative;
+}
+
+.tutorial2{
+  text-align: center;
+  z-index: 5;
 }
 
 #modalButton{
   z-index: 0;
 margin-left:70%;
-margin-top:30%;
+
 
 }
 .hello-enter {

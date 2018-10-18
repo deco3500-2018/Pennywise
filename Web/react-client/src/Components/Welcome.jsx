@@ -3,17 +3,19 @@ import {Redirect} from 'react-router-dom';
 import { Button, Divider, Image, Transition, Form, Label} from 'semantic-ui-react';
 import { CSSTransitionGroup } from 'react-transition-group';
 import axios from 'axios';
+import {browserHistory} from 'react-router';
 
 
 class Welcome extends Component{
   constructor(props){
     super(props);
     this.state = {
-      name : " ",
+      name : "",
       redirect : false,
       visible: true,
       email : "",
-      message:"hi"
+      message:"hi",
+      emailRedirect:false
     };
     this.handleChange= this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -23,30 +25,36 @@ class Welcome extends Component{
     handleChange = e => {
 
       this.setState({ [e.target.name]:e.target.value})
-      console.log(this.state);
+
     }
 
-    async handleSubmit(e){
+
+    handleSubmit = (e) =>{
       e.preventDefault()
       const {email,message} = this.state
-      console.log(email);
-      const form = await axios.post('/api/form',{
+
+      const form = axios.post('/api/form',{
         email,message
       })
+      this.setState({emailRedirect:true})
+
     }
 
   componentDidMount(){
     let data = JSON.parse(sessionStorage.getItem('userData'));
     this.setState({name : data.name});
   }
+
+
   render(){
     const {visible} = this.state
+    const {emailRedirect} = this.state
     if (!sessionStorage.getItem('userData') || this.state.redirect) {
       return(<Redirect to ={'/'}/>)
     }
     return(
       <div>
-  <div class="introduction">
+  <div class="welcome">
       <CSSTransitionGroup
         transitionName="hello"
           transitionAppear={true}
@@ -55,7 +63,7 @@ class Welcome extends Component{
           transitionAppearTimeout={6000}
           transitionLeaveTimeout={3000}>
          <h1>  Hi {this.state.name}
-           <br/>This time you spent 99$</h1>
+           <br/>This time you spent $ 99</h1>
        </CSSTransitionGroup>
 
        <CSSTransitionGroup
@@ -76,7 +84,7 @@ class Welcome extends Component{
             transitionEnterTimeout={3000}
             transitionAppearTimeout={6000}
             transitionLeaveTimeout={3000}>
-           <Form onSubmit={this.handleSubmit}>
+           <Form onSubmit={this.handleSubmit} >
              <Form.Field inline>
       <input type='email' name="email" onChange={this.handleChange} placeholder='email' />
       <Label for="email" basic color='white' id="remind" pointing='left'>
@@ -84,11 +92,12 @@ class Welcome extends Component{
       </Label>
     </Form.Field>
 
-             <Form.Button>Submit</Form.Button>
+             <Form.Button >Submit</Form.Button>
            </Form>
 
          </CSSTransitionGroup>
 
+{emailRedirect &&(  <Redirect to={'/game'}/>)}
 
   </div>
   </div>

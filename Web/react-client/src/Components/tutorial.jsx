@@ -1,5 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, {Component} from 'react';
+import {Button} from 'semantic-ui-react';
+import Registe from './Registe';
+import Welcome from './Welcome';
+import Game from './Game';
+import tutorial from './tutorial';
 import Modal from 'react-modal';
 
 const customStyles = {
@@ -12,17 +16,17 @@ const customStyles = {
     transform             : 'translate(-50%, -50%)'
   }
 };
+//
 
+class Tutorial extends Component{
 
-
-class tutorial extends React.Component {
-  constructor() {
-    super();
-
+  constructor(props){
+    super(props);
     this.state = {
-      modalIsOpen: false
-    };
+      videoUrl:'http://localhost/Pennywise/public/slow.mp4',
+      modalIsOpen: false,
 
+    }
     this.openModal = this.openModal.bind(this);
     this.afterOpenModal = this.afterOpenModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
@@ -41,32 +45,45 @@ class tutorial extends React.Component {
     this.setState({modalIsOpen: false});
   }
 
-  render() {
-    return (
-      <div>
-        <button onClick={this.openModal}>Open Modal</button>
-        <Modal
-          isOpen={this.state.modalIsOpen}
-          onAfterOpen={this.afterOpenModal}
-          onRequestClose={this.closeModal}
-          style={customStyles}
-          contentLabel="Example Modal"
-        >
+  render () {
 
-          <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
-          <button onClick={this.closeModal}>close</button>
-          <div>I am a modal</div>
-          <form>
-            <input />
-            <button>tab navigation</button>
-            <button>stays</button>
-            <button>inside</button>
-            <button>the modal</button>
-          </form>
-        </Modal>
-      </div>
-    );
-  }
-}
+        return (
 
-export default tutorial;
+           <div>
+               <div class="tutorial">
+                 <Modal
+                   isOpen={this.state.modalIsOpen}
+                   onAfterOpen={this.afterOpenModal}
+                   onRequestClose={this.closeModal}
+                   style={{}}
+                   contentLabel="Tutorial modal"
+                 >
+                 <div class='tutorial2'>
+                   <button onClick={this.closeModal}>close</button>
+                   <h2 ref={subtitle => this.subtitle = subtitle}>Welcome to Puzzle Pay</h2>
+
+
+                   <h5>Puzzle Pay can help you deal with inpulsive spending</h5>
+                   <h5>Here is how to use it</h5>
+               <h5>Puzzle Pay will automatically opens when you checkout on online shopping page</h5>
+              <img src="http://localhost/Pennywise/public/cart.png"/>
+            <h5>Input your Observer's Email in the input text field and proceed by clicking the red arrow</h5> <h5>You will be greeted with a puzzle. The solution of the puzzle will be sent to the observer</h5><h5>The puzzle difficulty will be based on the total amount of your cart</h5>
+          <h5>Have fun!</h5></div>
+                 </Modal>
+                 <button id="modalButton" onClick={this.openModal}>Tutorial</button>
+
+               </div>
+
+
+            <video id="background-video" style={{zIndex:0}} loop autoPlay muted>
+                <source src={this.state.videoUrl} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+
+            </div>
+        )
+    }
+
+};
+
+export default Tutorial;

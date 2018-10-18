@@ -29,6 +29,7 @@ class Registe extends Component {
 
     if (postData) {
       sessionStorage.setItem("userData", JSON.stringify(postData));
+      
 
       this.setState({redirect:true});
       }else {}
