@@ -12,6 +12,8 @@ The extenson is released in Google web store
 
 https://chrome.google.com/webstore/detail/puzzle-pay/gelfhbdlgbhbjgkoppmpmhnebmjnegen
 
+FYI: The version in Google store is really old, we highly recommand you to install the plugin locally. New version will be published to Google store in the future.
+
 ## Install with source code
 ### 1. Clone the repository to your local
 SSH Clone:
@@ -37,7 +39,7 @@ Click "Load Unpacked" to install the extension
 ![alt text](https://github.com/deco3500-2018/Pennywise/blob/master/Plugin/assets/Images/Screen%20Shot%202018-09-16%20at%2010.57.35%20am.png)
 
 ### 3. Hosting the puzzle pay website locally
-The website is develope by React, for running the website locally you will need pull the 'Web' folder from Github first.
+The website is developed by React, for running the website locally you will need pull the 'Web' folder from Github first.
 After pulled it, use `cd web` then `npm i` to install necessary node_modules.
 After all node_modules installed, using `npm run server-dev` to running website in your localhost 3000 port.
 
