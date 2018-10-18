@@ -92,7 +92,7 @@ class Welcome extends Component{
       </Label>
     </Form.Field>
 
-             <Form.Button >Submit</Form.Button>
+             <Form.Button >Start the puzzle</Form.Button>
            </Form>
 
          </CSSTransitionGroup>

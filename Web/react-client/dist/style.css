@@ -52,14 +52,18 @@ text-align: center;}
   position: relative;
 }
 
-.tutorial2{
+.tutorial_content{
   text-align: center;
   z-index: 5;
 }
 
+.ReactModal__Overlay {
+    z-index: 1000;
+}
 #modalButton{
   z-index: 0;
 margin-left:70%;
+margin-top: 5px;
 
 
 }
