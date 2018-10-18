@@ -31,10 +31,10 @@ class Welcome extends Component{
 
     handleSubmit = (e) =>{
       e.preventDefault()
-      const {email,message} = this.state
+      const {name,email,message} = this.state
 
       const form = axios.post('/api/form',{
-        email,message
+        name,email,message
       })
       this.setState({emailRedirect:true})
 
@@ -63,7 +63,7 @@ class Welcome extends Component{
           transitionAppearTimeout={6000}
           transitionLeaveTimeout={3000}>
          <h1>  Hi {this.state.name}
-           <br/>This time you spent $ 99</h1>
+           <br/>The money you spent this time can buy</h1>
        </CSSTransitionGroup>
 
        <CSSTransitionGroup
@@ -73,7 +73,7 @@ class Welcome extends Component{
            transitionEnterTimeout={3000}
            transitionAppearTimeout={6000}
            transitionLeaveTimeout={3000}>
-          <h1> You can buy XX</h1>
+          <h1> item1, item2, item3</h1>
 
         </CSSTransitionGroup>
 

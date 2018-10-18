@@ -29,7 +29,7 @@ class Registe extends Component {
 
     if (postData) {
       sessionStorage.setItem("userData", JSON.stringify(postData));
-      
+
 
       this.setState({redirect:true});
       }else {}
@@ -54,18 +54,7 @@ class Registe extends Component {
         <GoogleLogin clientId="421584335247-he3fuab3hj1042ikdargouvt2cpul800.apps.googleusercontent.com" buttonText="Login with google" onSuccess={responseGoogle} onFailure={responseGoogle}/>
       </div>
 
-      <div class="likes">
-        <Button as='div' labelPosition='right'>
-          <Button color='red'>
-            <Icon name='heart'/>
-            Like
-          </Button>
-          <Label as='a' basic="basic" color='red' pointing='left'>
-            1
-          </Label>
-        </Button>
-      </div>
-
+    
     </div>
   );
   }

@@ -52,6 +52,21 @@ text-align: center;}
   position: relative;
 }
 
+.game_back{background-color: #ecf0f1;width:100%;
+height:1080px;}
+.game{
+  text-align: center;
+  z-index: 5;
+
+  width: 1200px;
+  height:600px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
 .tutorial_content{
   text-align: center;
   z-index: 5;
