@@ -37,8 +37,21 @@ Click "Load Unpacked" to install the extension
 ![alt text](https://github.com/deco3500-2018/Pennywise/blob/master/Plugin/assets/Images/Screen%20Shot%202018-09-16%20at%2010.57.35%20am.png)
 
 ### 3. Hosting the puzzle pay website locally
-The website is develope by react.js, for running the website locally you will need pull the 'Web' folder from Github first.
+The website is develope by React, for running the website locally you will need pull the 'Web' folder from Github first.
 After pulled it, use `cd web` then `npm i` to install necessary node_modules.
 After all node_modules installed, using `npm run server-dev` to running website in your localhost 3000 port.
 
-The website intergradted google login function, you will need add your google developer API (https://developers.google.com/identity/) key in the Web/raect-client/Components/Registe.jsx first
+The web application intergradted google login function, you will need add your google developer API (https://developers.google.com/identity/) key in the Web/raect-client/Components/Registe.jsx first
+
+For using the web application's email function. You need add your personal email address and password in web/server/index.js
+~~~~
+
+let transporter = nodemailer.createTransport({
+      service:"Gmail",
+      auth:{
+        user:'addyouremailaddress',
+        pass:'addyouremailpwd'
+      }
+    })
+
+~~~~
