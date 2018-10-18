@@ -6,6 +6,9 @@ const app = express();
 const bodayParser = require("body-parser");
 const nodemailer = require('nodemailer');
 
+global.price;
+global.items;
+
 app.use(bodyParser.json());
 app.use(bodayParser.urlencoded({ectended: false}));
 app.use(express.static(`${__dirname}/../react-client/dist`));
@@ -16,18 +19,27 @@ app.listen(PORT, () => {
   console.log(`listening on port ${PORT}!`);
 });
 
+app.post("/api/price",(req,res)=>{
+  price = req.body.itemPrice;
+  items = req.body.itemList;
+  console.log(price);
+  console.log(items);
+})
+
 app.post("/api/form",(req,res)=>{
   nodemailer.createTestAccount((err,account)=>{
     const htmlEmail = `
-    <h3>Contact Details</h3>
-    <li>Email: ${req.body.email}</li>
-    <li>Email: ${req.body.message}</li>`
+    <h3>Hi ${req.body.email}</h3>
+    <p>${req.body.name} is using Puzzle Pay to control their spending habits, and wants you to help them. Below is their item cart that they want to buy: ${price} ${items}</p>
+    <p>If you agree what they are buying, you can tell them the solution to the puzzle below:</p>
+    <h1>answer1, answer2, answer3</h1>
+    <p>Thank you,</p>
+      <p>PuzzlePay</p>`
 
     let transporter = nodemailer.createTransport({
       service:"Gmail",
       auth:{
-        user:'',
-        pass:''
+        
       }
     })
 
@@ -44,8 +56,7 @@ app.post("/api/form",(req,res)=>{
         return console.log(err);
       }
 
-      console.log("Message sent %s", info.message);
-      console.log('Message URL: %s', nodemailer.getTestMessageUrl(ifno));
+      return console.log("sent");
     })
   })
 });
