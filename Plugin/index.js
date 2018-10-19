@@ -28,8 +28,6 @@ function show() {
         let item = response.data[1].replace(/\s+/g, "");
         let price = response.data[0].replace(/\s+/g, "");
         console.log(item);
-
-
         $.ajax({
           //  url:"https://deco3801-teambyteme.uqcloud.net/apikey",
           url:"http://localhost:3000/api/price",

@@ -15,7 +15,8 @@ class Welcome extends Component{
       visible: true,
       email : "",
       message:"hi",
-      emailRedirect:false
+      emailRedirect:false,
+      money:""
     };
     this.handleChange= this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -42,7 +43,8 @@ class Welcome extends Component{
 
   componentDidMount(){
     let data = JSON.parse(sessionStorage.getItem('userData'));
-    this.setState({name : data.name});
+    const money = axios.get('/api/form',{money})
+    this.setState({name : data.name, money:money});
   }
 
 
