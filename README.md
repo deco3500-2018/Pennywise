@@ -3,6 +3,10 @@
 
 [Design process](https://github.com/deco3500-2018/Pennywise/wiki/Design-process)
 
+
+[Develop process](https://github.com/deco3500-2018/Pennywise/wiki/Develop-Progress-&-Code-Go-Through)
+
+
 [Survey and Interview](https://github.com/deco3500-2018/Pennywise/wiki/Survey-and-Interview)
 
 
