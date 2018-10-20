@@ -16,7 +16,8 @@ class Welcome extends Component{
       email : "",
       message:"hi",
       emailRedirect:false,
-      money:""
+      money:"",
+      order:""
     };
     this.handleChange= this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -32,10 +33,10 @@ class Welcome extends Component{
 
     handleSubmit = (e) =>{
       e.preventDefault()
-      const {name,email,message} = this.state
+      const {name,email,message,order} = this.state
 
       const form = axios.post('/api/form',{
-        name,email,message
+        name,email,message,order
       })
       this.setState({emailRedirect:true})
 
@@ -43,14 +44,20 @@ class Welcome extends Component{
 
   componentDidMount(){
     let data = JSON.parse(sessionStorage.getItem('userData'));
-    const money = axios.get('/api/form',{money})
-    this.setState({name : data.name, money:money});
+    // get money from node
+    // let request = axios.post('/api/prices').then(function(resposne){money=resposne.data;console.log(money);return money;});
+    this.setState({name : data.name});
+    this.setState({order: Math.floor(Math.random() * 3)});
+
+
   }
 
 
   render(){
     const {visible} = this.state
     const {emailRedirect} = this.state
+    const {order} = this.state
+
     if (!sessionStorage.getItem('userData') || this.state.redirect) {
       return(<Redirect to ={'/'}/>)
     }
@@ -64,8 +71,12 @@ class Welcome extends Component{
           transitionEnterTimeout={3000}
           transitionAppearTimeout={6000}
           transitionLeaveTimeout={3000}>
-         <h1>  Hi {this.state.name}
-           <br/>The money you spent this time can buy</h1>
+         <h1>  Hi {this.state.name}   <br/>
+           {order == "" &&(   <h1> 	</h1>)}
+            {order == 0 &&(   <h1>  The money you spent this time can buy	</h1>)}
+              {order == 1 &&(   <h1>  The money you spent this time can buy	</h1>)}
+              {order == 2 &&(   <h1>  The money you spent this time you can travel to</h1>)}
+      </h1>
        </CSSTransitionGroup>
 
        <CSSTransitionGroup
@@ -75,7 +86,12 @@ class Welcome extends Component{
            transitionEnterTimeout={3000}
            transitionAppearTimeout={6000}
            transitionLeaveTimeout={3000}>
-          <h1> item1, item2, item3</h1>
+           {order == "" &&(   <h1> 	</h1>)}
+           {order === 0 &&(   <h1> Milk (3L), Pizza (Domino), Toothpaste	</h1>)}
+          {order === 1 &&(   <h1> Coffee (Nescafe Blend 43 150g), Chocolate,Eggs (1 cartoon)	</h1>)}
+          {order === 2 &&(   <h1> London	</h1>)}
+
+
 
         </CSSTransitionGroup>
 
@@ -99,7 +115,11 @@ class Welcome extends Component{
 
          </CSSTransitionGroup>
 
-{emailRedirect &&(  <Redirect to={'/game'}/>)}
+{emailRedirect && order == 0 && (  <Redirect to={'/game'}/>)}
+
+{emailRedirect && order == 1 && (  <Redirect to={'/game2'}/>)}
+
+{emailRedirect && order == 2 && (  <Redirect to={'/game3'}/>)}
 
   </div>
   </div>

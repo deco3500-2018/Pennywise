@@ -25,6 +25,7 @@ function show() {
       method: "getPrice"
     }, function(response) {
       if (response.method === "getPrice") {
+        console.log(response.data[1]);
         let item = response.data[1].replace(/\s+/g, "");
         let price = response.data[0].replace(/\s+/g, "");
         console.log(item);

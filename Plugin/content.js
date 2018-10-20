@@ -16,7 +16,7 @@ chrome.runtime.onMessage.addListener(
     function(Message, sender, sendResponse) {
         if(Message.method === "getPrice"){
             let Item_price = document.getElementById("sc-subtotal-amount-activecart").textContent;
-          let Item_list = document.getElementsByClassName("a-list-item")[0].textContent;
+            let Item_list = document.getElementsByClassName("a-list-item")[0].textContent;
 
             sendResponse({data: [Item_price, Item_list], method: "getPrice"});
         }
