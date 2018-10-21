@@ -1,5 +1,6 @@
-# Project Documentation
+# Puzzle Pay Project Documentation
 [Proposal](https://github.com/deco3500-2018/Pennywise/wiki/Proposal)
+
 
 [Design process](https://github.com/deco3500-2018/Pennywise/wiki/Design-process)
 
