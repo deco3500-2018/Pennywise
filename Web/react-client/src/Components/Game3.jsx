@@ -43,9 +43,9 @@ class game3 extends Component {
     if (this.state.useranswer1 == this.state.answer1 && this.state.useranswer2 == this.state.answer2 && this.state.useranswer3 == this.state.answer3) {
       return (<div class="game">
         <h1>Luke is in desperate need for help to control his impulsive behaviour to shop and spend. He have been in lots of bad situations when he have overspent big amounts. He have just received money to purchase a home, and do not want to blow the amazing opportunity to change before he lost his family home.</h1>
-        <div>
-          <h1>Are you still want buy this item?</h1>
-          <a href="https://amazon.com.au/gp/cart/view.html?ref=nav_cart">
+        <div class="sure">
+          <h3>Are you still want buy this item?</h3>
+          <a href="https://amazon.com.au/">
             <Button primary="primary">Yes</Button>
           </a>
 
@@ -57,11 +57,11 @@ class game3 extends Component {
     }
 
     return (<div class="game_back">
-      <div class="game">
+      <div class="game" style={{height:800}}>
 
-        <h1>The observer has been emailed with the solution of the puzzle. Ask them for the solution!</h1>
-        <h2>Please enter the correct words to continue the puzzle</h2>
-          <Image.Group size='small'>
+        <h2>The observer has been emailed with the solution of the puzzle. Ask them for the solution!</h2>
+        <p>Please enter the correct words to continue the puzzle</p>
+          <Image.Group size='medium'>
                 <Image src={"http://localhost/pennywise/public/puzzle3.png"} />
 
               </Image.Group>

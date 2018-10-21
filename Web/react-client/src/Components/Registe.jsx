@@ -27,10 +27,9 @@ class Registe extends Component {
       pic: res.w3.Paa
     };
 
+
     if (postData) {
       sessionStorage.setItem("userData", JSON.stringify(postData));
-
-
       this.setState({redirect:true});
       }else {}
   }
@@ -45,16 +44,21 @@ class Registe extends Component {
       this.signup(response, 'google');
     }
 
+    const style1= {color:'white',padding:'60px',fontSize:'80px'}
+
 
 
     document.getElementById('googleButton')
     return (
       <div>
+
+
       <div id="googleButton">
+        <div><h1 style={style1}>Welcome to Puzzle Pay</h1></div>
         <GoogleLogin clientId="421584335247-he3fuab3hj1042ikdargouvt2cpul800.apps.googleusercontent.com" buttonText="Login with google" onSuccess={responseGoogle} onFailure={responseGoogle}/>
       </div>
 
-    
+
     </div>
   );
   }

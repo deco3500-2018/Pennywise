@@ -1,4 +1,6 @@
-
+body{
+  font-family: 'Lato', sans-serif;
+}
 #background-video{
 height: 100%;
 width: 100%;
@@ -44,9 +46,11 @@ position: relative;
 top:280px;
 color: white;
 /* margin-top: 5%; */
-text-align: center;}
+text-align: center;
+  font-family: 'Lato', sans-serif;}
 
 .tutorial{
+  font-family: 'Lato', sans-serif;
   text-align: center;
   z-index: 5;
   position: relative;
@@ -57,19 +61,26 @@ height:1080px;}
 .game{
   text-align: center;
   z-index: 5;
-
-  width: 1200px;
+  font-family: 'Lato', sans-serif;
+  width: 1400px;
   height:600px;
   background-color: white;
   margin-left: auto;
   margin-right: auto;
-
+  padding-top: 100px;
+ box-shadow: 10px 10px 20px grey;
 }
 
 
 .tutorial_content{
+    font-family: 'Lato', sans-serif;
+
   text-align: center;
   z-index: 5;
+}
+
+.tutorial_content h5{
+  padding: 10px;
 }
 
 .ReactModal__Overlay {
@@ -142,6 +153,9 @@ margin-top: 5px;
 #send{
   text-align: center;
    width: 80%;
+}
+.sure{
+  padding-top: 150px;
 }
 
 #remind{color:#34495e;}

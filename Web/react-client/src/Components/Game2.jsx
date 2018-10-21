@@ -42,9 +42,9 @@ class game2 extends Component {
     if (this.state.useranswer1 == this.state.answer1 && this.state.useranswer2 == this.state.answer2 && this.state.useranswer3 == this.state.answer3) {
       return (<div class="game">
         <h1>John is having a hard time to control his spending free. He often ran into trouble with the debit card that he got, and have to go to the bank to straighten things out. He had too much shopping, as it is his biggest vices. He needs to get a handle on his behaviour. Shopping only makes him happy for a while, then he regret the things he bought.</h1>
-        <div>
-          <h1>Are you still want buy this item?</h1>
-          <a href="https://amazon.com.au/gp/cart/view.html?ref=nav_cart">
+        <div class="sure">
+          <h3>Are you still want buy this item?</h3>
+          <a href="https://amazon.com.au/">
             <Button primary="primary">Yes</Button>
           </a>
 
@@ -58,8 +58,8 @@ class game2 extends Component {
     return (<div class="game_back">
       <div class="game">
 
-        <h1>The observer has been emailed with the solution of the puzzle. Ask them for the solution!</h1>
-        <h2>Please enter the correct words to continue the puzzle</h2>
+        <h2>The observer has been emailed with the solution of the puzzle. Ask them for the solution!</h2>
+        <p>Please enter the correct image number to continue the puzzle</p>
           <Image.Group size='small'>
                 <Image src={"http://localhost/pennywise/public/random1.jpg"} />
                 <Image src={"http://localhost/pennywise/public/debit.png"} />
@@ -67,7 +67,7 @@ class game2 extends Component {
                 <Image src={"http://localhost/pennywise/public/random2.jpg"} />
                 <Image src={"http://localhost/pennywise/public/random3.jpg"} />
                 <Image src={"http://localhost/pennywise/public/vices.jpg"} />
-              </Image.Group>
+          </Image.Group>
 
         <Form onSubmit={this.handleSubmit}>
           <Form.Field inline="inline">

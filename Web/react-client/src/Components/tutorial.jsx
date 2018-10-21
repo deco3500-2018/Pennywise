@@ -51,16 +51,10 @@ class Tutorial extends Component {
         <Modal isOpen={this.state.modalIsOpen} onAfterOpen={this.afterOpenModal} onRequestClose={this.closeModal} style={{}} contentLabel="Tutorial modal">
           <div class='tutorial_content'>
 
-            <Button color="grey" animated='vertical' onClick={this.closeModal}>
-
-              <Button.Content visible="visible">
-                <Icon name='close'/>
-              </Button.Content>
-            </Button>
             <h2 ref={subtitle => this.subtitle = subtitle}>Welcome to Puzzle Pay</h2>
 
-            <h5>Puzzle Pay can help you deal with inpulsive spending</h5>
-            <h5>Here is how to use it</h5>
+            <h5 >Puzzle Pay can help you deal with inpulsive spending</h5>
+            <h5><b>Here is how to use it</b></h5>
             <h5>Puzzle Pay will automatically opens when you checkout on online shopping page</h5>
             <img src="http://localhost/Pennywise/public/cart.png"/>
             <h5>Input your Observer's Email in the input text field and proceed by clicking the red arrow</h5>
@@ -68,10 +62,17 @@ class Tutorial extends Component {
             <h5>You will be greeted with a puzzle. The solution of the puzzle will be sent to the observer</h5>
             <h5>The puzzle difficulty will be based on the total amount of your cart</h5>
             <h5>Have fun!</h5>
+
+                          <Button class="ui red basic button" animated='vertical' onClick={this.closeModal}>
+
+                            <Button.Content visible="visible">
+                              <Icon name='close'/>
+                            </Button.Content>
+                          </Button>
           </div>
         </Modal>
 
-        <Button color="teal" animated='vertical' id="modalButton" onClick={this.openModal}>
+        <Button class="ui basic button" animated='vertical' id="modalButton" onClick={this.openModal}>
           <Button.Content hidden="hidden">Tutorial</Button.Content>
           <Button.Content visible="visible">
             <Icon name='question circle'/>

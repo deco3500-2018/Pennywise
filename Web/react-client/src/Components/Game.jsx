@@ -38,7 +38,7 @@ class game extends Component{
     return(
 
       <div class="game"><h1>Jacob have a problem with spending money. Jacob have expenses that he needs to cover, but he uses his money to buy things he does not need. Afterwards, Jacob is struggling to pay his bills when he got paid.</h1>
-    <div><h1>Are you still want buy this item?</h1><a  href="https://amazon.com.au/gp/cart/view.html?ref=nav_cart"><Button primary>Yes</Button></a>
+    <div class='sure'><h3>Are you still want buy this item?</h3><a  href="https://amazon.com.au/"><Button primary>Yes</Button></a>
 
   <a  href="http://www.google.com">  <Button secondary>No</Button></a></div>
 </div>)
@@ -49,8 +49,8 @@ class game extends Component{
           <div class="game_back">
            <div class="game">
 
-             <h1>The observer has been emailed with the solution of the puzzle. Ask them for the solution!</h1>
-             <h2>Please enter the correct words to continue the puzzle</h2>
+             <h2>The observer has been emailed with the solution of the puzzle. Ask them for the solution!</h2>
+             <p>Please enter the correct words to continue the puzzle</p>
              <Form onSubmit={this.handleSubmit}>
               <Form.Field inline>
              <input type='text' name="useranswer1" onChange={this.handleChange} placeholder='answer1' />

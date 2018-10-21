@@ -35,15 +35,19 @@ class Welcome extends Component{
       e.preventDefault()
       const {name,email,message,order} = this.state
 
-      const form = axios.post('/api/form',{
-        name,email,message,order
-      })
-      this.setState({emailRedirect:true})
+      if (this.state.email == JSON.parse(sessionStorage.getItem('userData')).email) {
+      alert("Please input another people's email address")
+      }else{
+        const form = axios.post('/api/form',{
+          name,email,message,order
+        });this.setState({emailRedirect:true})}
+
 
     }
 
   componentDidMount(){
     let data = JSON.parse(sessionStorage.getItem('userData'));
+
     // get money from node
     // let request = axios.post('/api/prices').then(function(resposne){money=resposne.data;console.log(money);return money;});
     this.setState({name : data.name});
@@ -87,12 +91,9 @@ class Welcome extends Component{
            transitionAppearTimeout={6000}
            transitionLeaveTimeout={3000}>
            {order == "" &&(   <h1> 	</h1>)}
-           {order === 0 &&(   <h1 style={{fontSize:80}}> 3 🥛 (3L), 4 🍕 (Domino), 5 🍉</h1>)}
-          {order === 1 &&(   <h1 style={{fontSize:80}}> 3 ☕(Nescafe Blend 43 150g), 20 🍫 , 55 🥚 (1 carton)	</h1>)}
+           {order === 0 &&(   <h1 style={{fontSize:50}}> 3 🥛 (3L), 4 🍕 (Domino), 5 🍉</h1>)}
+          {order === 1 &&(   <h1 style={{fontSize:50}}> 3 ☕(Nescafe Blend 43 150g), 20 🍫 , 55 🥚 (1 carton)	</h1>)}
           {order === 2 &&(   <h1> London	</h1>)}
-
-
-
         </CSSTransitionGroup>
 
         <CSSTransitionGroup
