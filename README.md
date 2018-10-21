@@ -10,16 +10,20 @@
 ## Documentation
 
 * [Proposal](https://github.com/deco3500-2018/Pennywise/wiki/Proposal)
-What Is Puzzle Pay?
+
+_What Is Puzzle Pay?_
 
 * [Design process](https://github.com/deco3500-2018/Pennywise/wiki/Design-process)
-How is our design process development?
+
+_How is our design process development?_
 
 * [Develop process](https://github.com/deco3500-2018/Pennywise/wiki/Develop-Progress-&-Code-Go-Through)
-How is our development process of the prototype?
+
+_How is our development process of the prototype?_
 
 * [Survey and Interview](https://github.com/deco3500-2018/Pennywise/wiki/Survey-and-Interview)
-What data are we collecting from respondents?
+
+_What data are we collecting from respondents?_
 
 # How to Use puzzle pay
 ## 1. Install Puzzle Pay on the chrome extension
