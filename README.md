@@ -1,23 +1,45 @@
-# Project Documentation
-[Proposal](https://github.com/deco3500-2018/Pennywise/wiki/Proposal)
+# [Pennywise] Puzzle Pay Project Documentation
 
-[Design process](https://github.com/deco3500-2018/Pennywise/wiki/Design-process)
+**Team Member**
 
+* Dylan Ridings [dylan.bradshaw@live.com]
+* Seamus Zhou [z.zhou@uqconnect.edu.au]
+* Muhammad Rafi Rizky Ramdhani [m.ramdhani@uq.net.au ]
+* Louis Alan [louischristoph.alan@gmail.com]
 
-[Develop process](https://github.com/deco3500-2018/Pennywise/wiki/Develop-Progress-&-Code-Go-Through)
+# Documentation
 
+##  [Proposal](https://github.com/deco3500-2018/Pennywise/wiki/Proposal)
 
-[Survey and Interview](https://github.com/deco3500-2018/Pennywise/wiki/Survey-and-Interview)
+_What Is Puzzle Pay?_
 
+##  Design process
+
+* [Protype Iteration 1](https://github.com/deco3500-2018/Pennywise/wiki/Prototype-Iteration-1)
+
+* [Protype Iteration 2](https://github.com/deco3500-2018/Pennywise/wiki/Prototype-Iteration-2)
+
+* [Protype Iteration 3](https://github.com/deco3500-2018/Pennywise/wiki/Prototype-Iteration-3)
+
+_How is our design process development?_
+
+##  [Development process](https://github.com/deco3500-2018/Pennywise/wiki/Develop-Progress-&-Code-Go-Through)
+
+_How is our development process of the prototype?_
+
+##  [Survey and Interview](https://github.com/deco3500-2018/Pennywise/wiki/Survey-and-Interview)
+
+_What data are we collecting from respondents?_
 
 # How to Use puzzle pay
-## Download from Chrome Web Store
-The extenson is released in Google web store
+## 1. Install Puzzle Pay on the chrome extension
+Puzzle Pay is available to be downloaded from Chrome Web Store
 
-https://chrome.google.com/webstore/detail/puzzle-pay/gelfhbdlgbhbjgkoppmpmhnebmjnegen
+ _The link to the the Chrome web store_: https://chrome.google.com/webstore/detail/puzzle-pay/gelfhbdlgbhbjgkoppmpmhnebmjnegen
 
-FYI: The version in Google store is really old, we highly recommand you to install the plugin locally. New version will be published to Google store in the future.
+_**FYI: The version in Google store is really old, we highly recommand you to install the plugin locally. New version will be published to Google store in the future.**_
 
+## 2. Install Puzzle Pay on your local computer
 ## Install with source code or our CRX file
 For Installing Puzzle pay in your Chrome broswer locally, we provided two way for you to install it.
 
