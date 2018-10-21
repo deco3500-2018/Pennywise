@@ -7,7 +7,7 @@
 * Muhammad Rafi Rizky Ramdhani [m.ramdhani@uq.net.au ]
 * Louis Alan [louischristoph.alan@gmail.com]
 
-## Documentation
+# Documentation
 
 ##  [Proposal](https://github.com/deco3500-2018/Pennywise/wiki/Proposal)
 
