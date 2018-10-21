@@ -27,8 +27,7 @@ _What data are we collecting from respondents?_
 
 # How to Use puzzle pay
 ## 1. Install Puzzle Pay on the chrome extension
-## Puzzle Pay is available to be downloaded from Chrome Web Store
-The extenson has been released in Google web store
+**Puzzle Pay is available to be downloaded from Chrome Web Store**
 
  _The link to the the Chrome web store_: https://chrome.google.com/webstore/detail/puzzle-pay/gelfhbdlgbhbjgkoppmpmhnebmjnegen
 
