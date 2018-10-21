@@ -9,19 +9,19 @@
 
 ## Documentation
 
-## * [Proposal](https://github.com/deco3500-2018/Pennywise/wiki/Proposal)
+##  [Proposal](https://github.com/deco3500-2018/Pennywise/wiki/Proposal)
 
 _What Is Puzzle Pay?_
 
-## * [Design process](https://github.com/deco3500-2018/Pennywise/wiki/Design-process)
+##  [Design process](https://github.com/deco3500-2018/Pennywise/wiki/Design-process)
 
 _How is our design process development?_
 
-## * [Develop process](https://github.com/deco3500-2018/Pennywise/wiki/Develop-Progress-&-Code-Go-Through)
+##  [Develop process](https://github.com/deco3500-2018/Pennywise/wiki/Develop-Progress-&-Code-Go-Through)
 
 _How is our development process of the prototype?_
 
-## * [Survey and Interview](https://github.com/deco3500-2018/Pennywise/wiki/Survey-and-Interview)
+##  [Survey and Interview](https://github.com/deco3500-2018/Pennywise/wiki/Survey-and-Interview)
 
 _What data are we collecting from respondents?_
 
