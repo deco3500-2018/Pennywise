@@ -87,8 +87,8 @@ class Welcome extends Component{
            transitionAppearTimeout={6000}
            transitionLeaveTimeout={3000}>
            {order == "" &&(   <h1> 	</h1>)}
-           {order === 0 &&(   <h1> Milk (3L), Pizza (Domino), Toothpaste	</h1>)}
-          {order === 1 &&(   <h1> Coffee (Nescafe Blend 43 150g), Chocolate,Eggs (1 cartoon)	</h1>)}
+           {order === 0 &&(   <h1 style={{fontSize:80}}> 3 🥛 (3L), 4 🍕 (Domino), 5 🍉</h1>)}
+          {order === 1 &&(   <h1 style={{fontSize:80}}> 3 ☕(Nescafe Blend 43 150g), 20 🍫 , 55 🥚 (1 carton)	</h1>)}
           {order === 2 &&(   <h1> London	</h1>)}
 
 

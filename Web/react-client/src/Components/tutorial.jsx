@@ -64,6 +64,7 @@ class Tutorial extends Component {
             <h5>Puzzle Pay will automatically opens when you checkout on online shopping page</h5>
             <img src="http://localhost/Pennywise/public/cart.png"/>
             <h5>Input your Observer's Email in the input text field and proceed by clicking the red arrow</h5>
+            <img src="http://localhost/Pennywise/public/email.png"/>
             <h5>You will be greeted with a puzzle. The solution of the puzzle will be sent to the observer</h5>
             <h5>The puzzle difficulty will be based on the total amount of your cart</h5>
             <h5>Have fun!</h5>
