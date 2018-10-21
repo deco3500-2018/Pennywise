@@ -1,4 +1,14 @@
-# Puzzle Pay Project Documentation
+# [Pennywise] Puzzle Pay Project Documentation
+
+**Team Mmember**
+
+* Dylan Ridings [dylan.bradshaw@live.com]
+* Seamus Zhou [z.zhou@uqconnect.edu.au]
+* Muhammad Rafi Rizky Ramdhani [m.ramdhani@uq.net.au ]
+* Louis Alan [louischristoph.alan@gmail.com]
+
+## Documentation
+
 * [Proposal](https://github.com/deco3500-2018/Pennywise/wiki/Proposal)
 What Is Puzzle Pay?
 
