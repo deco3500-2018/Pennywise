@@ -13,11 +13,13 @@
 
 _What Is Puzzle Pay?_
 
-##  [Design process](https://github.com/deco3500-2018/Pennywise/wiki/Design-process)
+##  Design process
+* [Protype Iteration 1] (https://github.com/deco3500-2018/Pennywise/wiki/Prototype-Iteration-1)
+* [Protype Iteration 1] (https://github.com/deco3500-2018/Pennywise/wiki/Prototype-Iteration-2)
 
 _How is our design process development?_
 
-##  [Develop process](https://github.com/deco3500-2018/Pennywise/wiki/Develop-Progress-&-Code-Go-Through)
+##  [Development process](https://github.com/deco3500-2018/Pennywise/wiki/Develop-Progress-&-Code-Go-Through)
 
 _How is our development process of the prototype?_
 
