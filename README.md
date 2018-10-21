@@ -1,6 +1,6 @@
 # [Pennywise] Puzzle Pay Project Documentation
 
-**Team Mmember**
+**Team Member**
 
 * Dylan Ridings [dylan.bradshaw@live.com]
 * Seamus Zhou [z.zhou@uqconnect.edu.au]
