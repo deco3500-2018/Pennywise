@@ -12,7 +12,6 @@ class App extends Component{
   render(){
     return(
       <div>
-        123
       <Routes name={this.state.appName}/>
       </div>
     );
