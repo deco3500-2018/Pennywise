@@ -3,7 +3,7 @@
 **Team Member**
 
 * Dylan Ridings [dylan.bradshaw@live.com]
-* Seamus Zhou []
+* Seamus Zhou [z.zhou@uq.net.au]
 * Muhammad Rafi Rizky Ramdhani [m.ramdhani@uq.net.au ]
 * Louis Alan [louischristoph.alan@gmail.com]
 
