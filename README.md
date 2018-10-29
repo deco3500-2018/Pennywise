@@ -84,9 +84,14 @@ let transporter = nodemailer.createTransport({
 
 # Documentation
 
-##  [Proposal](https://github.com/deco3500-2018/Pennywise/wiki/Proposal)
+##  Project Summary
+_Problem Space_
+
+The problem space that we have choosen is ...
 
 _What Is Puzzle Pay?_
+Puzzle Pay is a web-based browser extension that is aimed towards compulsive spenders. Puzzle Pay is designed to make the user reflects on their actions and behaviour of spending money unnecessarily with the help of other people. Puzzle Pay aims to modify the user behaviour in regards of compulsive spending, and motivate people to spend their money on important things. Puzzle Pay is different that other application as there are not many active application that is designed to stop impulsive spending the moment that the action is been performed. 
+[Proposal](https://github.com/deco3500-2018/Pennywise/wiki/Proposal)
 
 ##  Design process
 ### Phase one: Defining Problem
@@ -108,15 +113,24 @@ With the basis of the research that we have conducted, we developed a web-based 
 
 * [Prototype Iteration 3](https://github.com/deco3500-2018/Pennywise/wiki/Prototype-Iteration-3)
 
-##  [Development process](https://github.com/deco3500-2018/Pennywise/wiki/Develop-Progress-&-Code-Go-Through)
+## Development Process
 
 _How is our development process of the prototype?_
 
-We implemented the insights that have been generated from the user testings that we have conducted in the development of Puzzle Pay. Our project is a culmination of research and hard work that we hope would be able to help people address their problem of impulsive spending and help them change their behaviour before it caused unwanted and irrepairable damage to their life.
+We implemented the insights that have been generated from the user testings that we have conducted in the development of Puzzle Pay. Our project is a culmination of research and hard work that we hope would be able to help people address their problem of impulsive spending and help them change their behaviour before it caused unwanted and irrepairable damage to their life. Click the link below to see the dedicated WIKI page to our development process.
+* [Development process](https://github.com/deco3500-2018/Pennywise/wiki/Develop-Progress-&-Code-Go-Through)
 
 # Project Contributions
-* Dylan Ridings [dylan.bradshaw@live.com]
-* Seamus Zhou [z.zhou@uq.net.au]
-* Muhammad Rafi Rizky Ramdhani [m.ramdhani@uq.net.au ]
-* Louis Alan [louischristoph.alan@gmail.com]
+### Dylan Ridings [dylan.bradshaw@live.com]
+### Seamus Zhou [z.zhou@uq.net.au]
+### Muhammad Rafi Rizky Ramdhani [m.ramdhani@uq.net.au ]
+### Louis Alan [louischristoph.alan@gmail.com]
+* Creating plan of work
+* Designed Low-fidelity and High-fidelity prototypes
+* Conducted user testings for each prototype iteration
+* Designed Informative Poster
+* Modify Github WIKI and README
+* Setting up exhibition
+
+
 
