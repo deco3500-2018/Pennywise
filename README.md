@@ -8,7 +8,7 @@
 * Louis Alan [louischristoph.alan@gmail.com]
 
 # Team Poster
-![](blob:https://imgur.com/e904d1c1-2c62-43b0-a038-f1170c27afcf)
+![](https://i.imgur.com/ep5bzML.jpg)
 
 # Team Flyer
 
