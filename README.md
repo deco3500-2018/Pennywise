@@ -89,20 +89,32 @@ let transporter = nodemailer.createTransport({
 _What Is Puzzle Pay?_
 
 ##  Design process
+### Phase one: Defining Problem
+Defining problem is the first step that we took to decide the domain space that we are going to be designing for. We noticed that there is a problem with human behaviour on the act of spending money impulsively. After a lengthy discussion, we decided to choose a theme of changing behaviour and focused on spending problem. We agreed that we wanted to develop a system that addressed those problems and tries to solve it
+### Phase two: Brainstorming
+After the theme has been chosen, we decided to brainstorm ideas throrough the domain. We wanted to design a product that would change the behaviour of the user on spending money. Firstly, we proposed a solution to develop a mobile-based tracking application that would track the live location of the user. If the user entered a shopping complex, the application would automatically boot up or show notification. Mainly, the idea was a game that would stop people from spending money by tracking their location and performing task. But, after a discussion with the tutor, we decided to change the idea as it was not suitable with mobile nor social definition.
+### Phase three: Iteration
+#### Research
+We realized that we have not done the research about the problem space it self. In order to design a solution that would effectively address our domain, we performed initial research about impulsive spender to gather a general idea of what was currently available to those users. We found out that there are not many application that would try to prevent you to spend money online. There are numerous application that can track your spending, or budgeting application, but it does not address the problem that we proposed. Therefore, we performed more research to the areas of where we could develop, and agreed with the idea to develop a web-based plugin that aims to prevent user on spending money impulsively. Click the link below to see the data that we have gathered
+* [Data Gathering Evidence](https://github.com/deco3500-2018/Pennywise/wiki/Survey-,Interview-and-Research)
 
-* [Protype Iteration 1](https://github.com/deco3500-2018/Pennywise/wiki/Prototype-Iteration-1)
-
-* [Protype Iteration 2](https://github.com/deco3500-2018/Pennywise/wiki/Prototype-Iteration-2)
-
-* [Protype Iteration 3](https://github.com/deco3500-2018/Pennywise/wiki/Prototype-Iteration-3)
-
+#### Prototype & User Testing
 _How is our design process development?_
+With the basis of the research that we have conducted, we developed a web-based plugin called puzzle pay. A low-fidelity and high-fidelity prototypes are created alongside with the development process to test aspects that would be implemented in the final product. From the prototype, we conducted a user testing at each iteration of the prototype to generate insights that will be used as a research value for the next iteration. Click the link below to see the prototype iteration that we have conducted
+* [Prototype Iteration 1](https://github.com/deco3500-2018/Pennywise/wiki/Prototype-Iteration-1)
+
+* [Prototype Iteration 2](https://github.com/deco3500-2018/Pennywise/wiki/Prototype-Iteration-2)
+
+* [Prototype Iteration 3](https://github.com/deco3500-2018/Pennywise/wiki/Prototype-Iteration-3)
 
 ##  [Development process](https://github.com/deco3500-2018/Pennywise/wiki/Develop-Progress-&-Code-Go-Through)
 
 _How is our development process of the prototype?_
+We implemented the insights that have been generated from the user testings that we have conducted in the development of Puzzle Pay. Our project is a culmination of research and hard work that we hope would be able to help people address their problem of impulsive spending and help them change their behaviour before it caused unwanted and irrepairable damage to their life.
 
-##  [Survey and Interview](https://github.com/deco3500-2018/Pennywise/wiki/Survey-and-Interview)
-
-_What data are we collecting from respondents?_
+# Project Contributions
+* Dylan Ridings [dylan.bradshaw@live.com]
+* Seamus Zhou [z.zhou@uq.net.au]
+* Muhammad Rafi Rizky Ramdhani [m.ramdhani@uq.net.au ]
+* Louis Alan [louischristoph.alan@gmail.com]
 
