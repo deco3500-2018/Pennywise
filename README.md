@@ -100,6 +100,7 @@ We realized that we have not done the research about the problem space it self. 
 
 #### Prototype & User Testing
 _How is our design process development?_
+
 With the basis of the research that we have conducted, we developed a web-based plugin called puzzle pay. A low-fidelity and high-fidelity prototypes are created alongside with the development process to test aspects that would be implemented in the final product. From the prototype, we conducted a user testing at each iteration of the prototype to generate insights that will be used as a research value for the next iteration. Click the link below to see the prototype iteration that we have conducted
 * [Prototype Iteration 1](https://github.com/deco3500-2018/Pennywise/wiki/Prototype-Iteration-1)
 
@@ -110,6 +111,7 @@ With the basis of the research that we have conducted, we developed a web-based 
 ##  [Development process](https://github.com/deco3500-2018/Pennywise/wiki/Develop-Progress-&-Code-Go-Through)
 
 _How is our development process of the prototype?_
+
 We implemented the insights that have been generated from the user testings that we have conducted in the development of Puzzle Pay. Our project is a culmination of research and hard work that we hope would be able to help people address their problem of impulsive spending and help them change their behaviour before it caused unwanted and irrepairable damage to their life.
 
 # Project Contributions
