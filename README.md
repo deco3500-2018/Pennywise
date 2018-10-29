@@ -7,6 +7,11 @@
 * Muhammad Rafi Rizky Ramdhani [m.ramdhani@uq.net.au ]
 * Louis Alan [louischristoph.alan@gmail.com]
 
+# Team Poster
+![Install Extenstion](https://files.slack.com/files-pri/TB6NVQQQ7-FDK84JQ91/poster.png)
+
+# Team Flyer
+
 # Documentation
 
 ##  [Proposal](https://github.com/deco3500-2018/Pennywise/wiki/Proposal)
