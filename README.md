@@ -8,7 +8,7 @@
 * Louis Alan [louischristoph.alan@gmail.com]
 
 # Team Poster
-![Install Extenstion](https://files.slack.com/files-pri/TB6NVQQQ7-FDK84JQ91/poster.png)
+![](blob:https://imgur.com/e904d1c1-2c62-43b0-a038-f1170c27afcf)
 
 # Team Flyer
 
