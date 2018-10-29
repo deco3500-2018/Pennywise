@@ -124,6 +124,14 @@ We implemented the insights that have been generated from the user testings that
 ### Dylan Ridings [dylan.bradshaw@live.com]
 ### Seamus Zhou [z.zhou@uq.net.au]
 ### Muhammad Rafi Rizky Ramdhani [m.ramdhani@uq.net.au ]
+* Involves in group plan of work including survey material as well as workshops
+* Responsible creating the Low-fidelity Prototypes
+* Work on team promotional material 
+* Working on updating GIT
+* Setting up exhibition
+* Responsible in conducting background research
+
+
 ### Louis Alan [louischristoph.alan@gmail.com]
 * Creating plan of work
 * Designed Low-fidelity and High-fidelity prototypes
