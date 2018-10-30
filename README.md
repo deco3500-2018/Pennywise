@@ -129,6 +129,11 @@ We implemented the insights that have been generated from the user testings that
 
 
 ### Seamus Zhou [z.zhou@uq.net.au]
+* Developed the whole web application and extension
+* Created first iteration high fidelity prototype
+* Written Wiki pages related with code and design 
+* Research for the project's domain
+* Pitching and doing demonstrations during the exhibition
 ### Muhammad Rafi Rizky Ramdhani [m.ramdhani@uq.net.au ]
 * Involves in group plan of work including survey material as well as workshops
 * Responsible creating the Low-fidelity Prototypes
