@@ -86,8 +86,7 @@ let transporter = nodemailer.createTransport({
 
 ##  Project Summary
 _Problem Space_
-
-The problem space that we have choosen is ...
+The problem space that we have choosen is developing a system that change's peoples behaviours towards impulsively spending. The reason we chose to focus on this problem space is because everybody has problems with spending money and there are numerous system that help people save money but none that work similarly to how we've developed ours. There are numerous budget and spend tracking applications but none of those stop you from spending at the moment of spending. Hence our problem space was to design a system that stopped people from impulsively spending money at the moment that they decided to do so.
 
 _What Is Puzzle Pay?_
 Puzzle Pay is a web-based browser extension that is aimed towards compulsive spenders. Puzzle Pay is designed to make the user reflects on their actions and behaviour of spending money unnecessarily with the help of other people. Puzzle Pay aims to modify the user behaviour in regards of compulsive spending, and motivate people to spend their money on important things. Puzzle Pay is different that other application as there are not many active application that is designed to stop impulsive spending the moment that the action is been performed. 
@@ -122,6 +121,13 @@ We implemented the insights that have been generated from the user testings that
 
 # Project Contributions
 ### Dylan Ridings [dylan.bradshaw@live.com]
+* Led group discussions regarding development (Whiteboard discussions)
+* Performed critical background research for the project (Interview and other surveys)
+* Contributed to updating GIT
+* Assisted in development of promotial material
+* Setting up exhibition
+
+
 ### Seamus Zhou [z.zhou@uq.net.au]
 ### Muhammad Rafi Rizky Ramdhani [m.ramdhani@uq.net.au ]
 * Involves in group plan of work including survey material as well as workshops
